@@ -1,0 +1,64 @@
+$color1: #FFED12
+$color2: #E8BA00
+$color3: #FFE015
+$color4: #E8B600
+$color5: #FFAE0F
+
+$dark1: #5b5c5a
+$dark2: #595a5c
+$dark3: #3b3c38
+
+$light1: #cfd9de
+$light2: #dee3e3
+$light3: #cdd5d5
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap')
+
+body, html
+  height: 100%
+  width: 100%
+  margin: 0
+  padding: 0
+
+body
+  font-family: 'Roboto', sans-serif
+  //font-size: 1.5rem
+  font-size: 2vh
+
+main
+  display: grid
+  grid-template-columns: 100%
+
+.titlepic
+  width: 100%
+
+
+.sectiontitle
+  padding: 2vh
+  text-align: center
+  background: $dark1
+  color: $light2
+
+.section
+  display: grid
+  grid-gap: 0
+  grid-template-columns: repeat(auto-fit, minmax(54.668rem,1fr))
+  grid-template-rows: auto
+  img
+    width: 100%
+  .text
+    display: grid
+    grid-template-columns: 10% 1fr 10%
+    grid-template-rows: repeat(3, auto)
+    grid-template-areas: ". . ."". t ."". . ."
+    background: $light2
+    color: $dark1
+    p
+      grid-area: t
+
+
+
+
+@media screen and (max-width: 56rem)
+  .section
+    grid-template-columns: 100%
