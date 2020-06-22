@@ -1,9 +1,10 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;800&display=swap");
 body, html {
   height: 100%;
   width: 100%;
   margin: 0;
   padding: 0;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -13,8 +14,22 @@ body {
 }
 
 main {
+  margin: 0;
+  padding: 0;
   display: grid;
   grid-template-columns: 100%;
+}
+
+.maintitle {
+  text-align: center;
+  padding: 50vh 0 50vh 0;
+  background: linear-gradient(to right, #fdc830, #f37335);
+  font-size: 5em;
+  font-weight: 100;
+  letter-spacing: 1em;
+  text-decoration: none;
+  color: #3b3c38;
+  text-shadow: 0 0 40px #3b3c38;
 }
 
 .titlepic {
@@ -32,7 +47,6 @@ main {
 
 .section {
   display: grid;
-  grid-gap: 0;
   grid-template-columns: repeat(auto-fit, minmax(54.668rem, 1fr));
   grid-template-rows: auto;
 }

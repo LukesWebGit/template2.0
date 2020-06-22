@@ -12,13 +12,16 @@ $light1: #cfd9de
 $light2: $dark3
 $light3: #cdd5d5
 
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;800&display=swap')
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;800&display=swap')
 
 body, html
   height: 100%
   width: 100%
   margin: 0
   padding: 0
+  scroll-behavior: smooth
+  //background: #000
+
 
 body
   font-family: 'Roboto', sans-serif
@@ -26,12 +29,24 @@ body
   font-size: 1.5em
 
 main
+  margin: 0
+  padding: 0
   display: grid
   grid-template-columns: 100%
 
+.maintitle
+  text-align: center
+  padding: 50vh 0 50vh 0
+  background: linear-gradient(to right, rgb(253, 200, 48), rgb(243, 115, 53))
+  font-size: 5em
+  font-weight: 100
+  letter-spacing: 1em
+  text-decoration: none
+  color: $light2
+  text-shadow: 0 0 40px $light2
+
 .titlepic
   width: 100%
-
 
 .sectiontitle
   padding: 1%
@@ -43,7 +58,6 @@ main
 
 .section
   display: grid
-  grid-gap: 0
   grid-template-columns: repeat(auto-fit, minmax(54.668rem,1fr))
   grid-template-rows: auto
   img
