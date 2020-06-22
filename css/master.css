@@ -21,6 +21,7 @@ main {
 }
 
 .maintitle {
+  margin: 0;
   text-align: center;
   padding: 50vh 0 50vh 0;
   background: linear-gradient(to right, #fdc830, #f37335);
