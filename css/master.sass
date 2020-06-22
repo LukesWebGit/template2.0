@@ -4,15 +4,15 @@ $color3: #FFE015
 $color4: #E8B600
 $color5: #FFAE0F
 
-$dark1: #5b5c5a
+$dark1: #696969
 $dark2: #595a5c
 $dark3: #3b3c38
 
 $light1: #cfd9de
-$light2: #dee3e3
+$light2: $dark3
 $light3: #cdd5d5
 
-@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap')
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;800&display=swap')
 
 body, html
   height: 100%
@@ -22,8 +22,8 @@ body, html
 
 body
   font-family: 'Roboto', sans-serif
-  //font-size: 1.5rem
-  font-size: 2vh
+  font-weight: 400
+  font-size: 1.5em
 
 main
   display: grid
@@ -34,7 +34,9 @@ main
 
 
 .sectiontitle
-  padding: 2vh
+  padding: 1%
+  font-size: 3em
+  font-weight: 800
   text-align: center
   background: $dark1
   color: $light2
@@ -55,10 +57,20 @@ main
     color: $dark1
     p
       grid-area: t
+      line-height: 1.7
+
+footer
+  background: $dark1
+  padding: 5%
 
 
 
-
-@media screen and (max-width: 56rem)
+@media screen and (max-width: 1143px)
   .section
     grid-template-columns: 100%
+
+@media (orientation:portrait)
+  .section
+    grid-template-columns: 100%
+    .text
+      grid-template-columns: 5% 1fr 5%

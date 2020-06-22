@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;800&display=swap");
 body, html {
   height: 100%;
   width: 100%;
@@ -8,7 +8,8 @@ body, html {
 
 body {
   font-family: "Roboto", sans-serif;
-  font-size: 2vh;
+  font-weight: 400;
+  font-size: 1.5em;
 }
 
 main {
@@ -21,10 +22,12 @@ main {
 }
 
 .sectiontitle {
-  padding: 2vh;
+  padding: 1%;
+  font-size: 3em;
+  font-weight: 800;
   text-align: center;
-  background: #5b5c5a;
-  color: #dee3e3;
+  background: #696969;
+  color: #3b3c38;
 }
 
 .section {
@@ -41,16 +44,30 @@ main {
   grid-template-columns: 10% 1fr 10%;
   grid-template-rows: repeat(3, auto);
   grid-template-areas: ". . ." ". t ." ". . .";
-  background: #dee3e3;
-  color: #5b5c5a;
+  background: #3b3c38;
+  color: #696969;
 }
 .section .text p {
   grid-area: t;
+  line-height: 1.7;
 }
 
-@media screen and (max-width: 56rem) {
+footer {
+  background: #696969;
+  padding: 5%;
+}
+
+@media screen and (max-width: 1143px) {
   .section {
     grid-template-columns: 100%;
+  }
+}
+@media (orientation: portrait) {
+  .section {
+    grid-template-columns: 100%;
+  }
+  .section .text {
+    grid-template-columns: 5% 1fr 5%;
   }
 }
 
