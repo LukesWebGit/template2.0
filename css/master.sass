@@ -20,8 +20,6 @@ body, html
   margin: 0
   padding: 0
   scroll-behavior: smooth
-  //background: #000
-
 
 body
   font-family: 'Roboto', sans-serif
@@ -34,16 +32,38 @@ main
   display: grid
   grid-template-columns: 100%
 
+//.clean
+  text-align: center
+  padding: 50vh 0 50vh 0
+  background: transparent
+  font-size: 5vw
+  font-weight: 100
+  letter-spacing: 4vw
+  text-decoration: none
+  color: $light2
+  text-shadow: 0 0 40vw $light2
+
+
+
+//.mainmain
+  margin: auto
+  padding: auto
+  top: 0
+  left: 0
+  width: 100%
+  position: fixed
+  z-index: -1
+
 .maintitle
   text-align: center
   padding: 50vh 0 50vh 0
   background: linear-gradient(to right, rgb(253, 200, 48), rgb(243, 115, 53))
-  font-size: 5em
+  font-size: 5vw
   font-weight: 100
-  letter-spacing: 1em
+  letter-spacing: 4vw
   text-decoration: none
   color: $light2
-  text-shadow: 0 0 40px $light2
+  text-shadow: 0 0 40vw $light2
 
 .titlepic
   width: 100%
@@ -82,9 +102,15 @@ footer
 @media screen and (max-width: 1143px)
   .section
     grid-template-columns: 100%
+    .text
+      grid-template-columns: 5% 1fr 5%
+  .maintitle
+    font-weight: 400
 
 @media (orientation:portrait)
   .section
     grid-template-columns: 100%
     .text
       grid-template-columns: 5% 1fr 5%
+  .maintitle
+    font-weight: 400
