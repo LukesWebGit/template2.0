@@ -137,16 +137,26 @@ footer
   border-radius: 20px
   margin: 10px
   display: grid
+  grid-gap: 20px
+  //all cards general styling
+  div
+    display: flex
+    justify-content: space-between
+    align-items: center
+  //Last Card Social Media sytlying
   .social
     display: flex
     margin: 0
     padding: 0
-    justify-content: space-between
+    justify-content: space-around
+    //align-items: center
     background: $color5
     a
       background: $color1
+  //First card small menu styling
   .footmenu
     ul
+      width: 100%
       margin: 0
       padding: 0
       list-style: none
@@ -195,6 +205,8 @@ footer
     font-weight: 400
   .footelement
     flex: 1 0 100%
+    div
+      padding: 20px 50px
 
 
 @media (orientation:portrait)
