@@ -121,17 +121,18 @@ main {
 
 footer {
   background: #696969;
-  padding: 5%;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .footelement {
+  flex: 1 0 34%;
+  max-width: 33%;
   margin: 5px;
   background: #FFED12;
 }
 .footelement div {
   background: #FFAE0F;
-  padding: 5px;
-  margin: 10px;
 }
 
 @media screen and (max-width: 1920px) {
