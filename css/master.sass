@@ -121,7 +121,7 @@ main
       font-size: 1em
 
 footer
-  background: $light1
+  background: linear-gradient(to right, rgb(35, 37, 38), rgb(65, 67, 69))
   padding: 5% 3%
   display: flex
   justify-content: center
@@ -144,15 +144,18 @@ footer
     justify-content: space-between
     align-items: center
   //Last Card Social Media sytlying
+  .foottitle
+    p
+      font-size: 1.5em
+      font-weight: 800
   .social
     display: flex
-    margin: 0
-    padding: 0
     justify-content: space-around
-    //align-items: center
-    background: $color5
     a
-      background: $color1
+      color: $light1
+      transition: 300ms all ease-in-out
+      &:hover
+        color: $light2
   //First card small menu styling
   .footmenu
     ul
@@ -162,12 +165,22 @@ footer
       list-style: none
       display: flex
       justify-content: space-between
-      background: $color5
       li
-        background: $color1
         a
+          transition: 300ms all ease-in-out
           text-decoration: none
-          color: #ff0000
+          color: $light1
+          &:hover
+            color: $light2
+  //mail link styling
+  .mail
+    p
+      a
+        transition: 300ms all ease-in-out
+        text-decoration: none
+        color: $light1
+        &:hover
+          color: $light2
 
 
 
@@ -206,7 +219,7 @@ footer
   .footelement
     flex: 1 0 100%
     div
-      padding: 20px 50px
+      padding: 0 7%
 
 
 @media (orientation:portrait)

@@ -120,7 +120,7 @@ main {
 }
 
 footer {
-  background: #696969;
+  background: linear-gradient(to right, #232526, #414345);
   padding: 5% 3%;
   display: flex;
   justify-content: center;
@@ -143,15 +143,20 @@ footer {
   justify-content: space-between;
   align-items: center;
 }
+.footelement .foottitle p {
+  font-size: 1.5em;
+  font-weight: 800;
+}
 .footelement .social {
   display: flex;
-  margin: 0;
-  padding: 0;
   justify-content: space-around;
-  background: #FFAE0F;
 }
 .footelement .social a {
-  background: #FFED12;
+  color: #696969;
+  transition: 300ms all ease-in-out;
+}
+.footelement .social a:hover {
+  color: #a3a3a3;
 }
 .footelement .footmenu ul {
   width: 100%;
@@ -160,14 +165,22 @@ footer {
   list-style: none;
   display: flex;
   justify-content: space-between;
-  background: #FFAE0F;
-}
-.footelement .footmenu ul li {
-  background: #FFED12;
 }
 .footelement .footmenu ul li a {
+  transition: 300ms all ease-in-out;
   text-decoration: none;
-  color: #ff0000;
+  color: #696969;
+}
+.footelement .footmenu ul li a:hover {
+  color: #a3a3a3;
+}
+.footelement .mail p a {
+  transition: 300ms all ease-in-out;
+  text-decoration: none;
+  color: #696969;
+}
+.footelement .mail p a:hover {
+  color: #a3a3a3;
 }
 
 @media screen and (max-width: 1920px) {
@@ -195,7 +208,7 @@ footer {
     flex: 1 0 100%;
   }
   .footelement div {
-    padding: 20px 50px;
+    padding: 0 7%;
   }
 }
 @media (orientation: portrait) {
