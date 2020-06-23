@@ -11,37 +11,6 @@ $light2: rgb(163, 163, 163)
 
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;800&display=swap')
 
-@font-face
-  font-family: 'Material Icons'
-  font-style: normal
-  font-weight: 400
-  src: url(https://example.com/MaterialIcons-Regular.eot) /* For IE6-8 */
-  src: local('Material Icons'),
-
-.material-icons
-  font-family: 'Material Icons'
-  font-weight: normal
-  font-style: normal
-  font-size: 24px  /* Preferred icon size */
-  display: inline-block
-  line-height: 1
-  text-transform: none
-  letter-spacing: normal
-  word-wrap: normal
-  white-space: nowrap
-  direction: ltr
-
-  /* Support for all WebKit browsers. */
-  -webkit-font-smoothing: antialiased
-  /* Support for Safari and Chrome. */
-  text-rendering: optimizeLegibility
-
-  /* Support for Firefox. */
-  -moz-osx-font-smoothing: grayscale
-
-  /* Support for IE. */
-  font-feature-settings: 'liga'
-
 
 body, html
   height: 100%
@@ -74,7 +43,7 @@ main
   letter-spacing: 4vw
   text-decoration: none
   color: $dark1
-  text-shadow: 0 0 40vw $dark1
+  text-shadow: 0 0 30px #000
 
 .maintitle::selection
   background: transparent
@@ -121,7 +90,7 @@ main
       font-size: 1em
 
 footer
-  background: linear-gradient(to right, rgb(35, 37, 38), rgb(65, 67, 69))
+  background: -webkit-linear-gradient(109.6deg, rgba(0, 0, 0, 0.93) 11.2%, rgb(63, 61, 61) 78.9%)
   padding: 5% 3%
   display: flex
   justify-content: center
@@ -130,6 +99,7 @@ footer
 
 
 .footelement
+  box-shadow: 0 0 20px rgb(45, 45, 45)
   padding: 2%
   flex: 1 0 26%
   background: $dark1

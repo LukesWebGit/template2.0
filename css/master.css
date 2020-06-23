@@ -1,33 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;800&display=swap");
-@font-face {
-  font-family: "Material Icons";
-  font-style: normal;
-  font-weight: 400;
-  src: url(https://example.com/MaterialIcons-Regular.eot);
-  src: local("Material Icons");
-}
-.material-icons {
-  font-family: "Material Icons";
-  font-weight: normal;
-  font-style: normal;
-  font-size: 24px;
-  display: inline-block;
-  line-height: 1;
-  text-transform: none;
-  letter-spacing: normal;
-  word-wrap: normal;
-  white-space: nowrap;
-  direction: ltr;
-  /* Support for all WebKit browsers. */
-  -webkit-font-smoothing: antialiased;
-  /* Support for Safari and Chrome. */
-  text-rendering: optimizeLegibility;
-  /* Support for Firefox. */
-  -moz-osx-font-smoothing: grayscale;
-  /* Support for IE. */
-  font-feature-settings: "liga";
-}
-
 body, html {
   height: 100%;
   width: 100%;
@@ -63,7 +34,7 @@ main {
   letter-spacing: 4vw;
   text-decoration: none;
   color: #3b3c38;
-  text-shadow: 0 0 40vw #3b3c38;
+  text-shadow: 0 0 30px #000;
 }
 
 .maintitle::selection {
@@ -120,7 +91,7 @@ main {
 }
 
 footer {
-  background: linear-gradient(to right, #232526, #414345);
+  background: -webkit-linear-gradient(109.6deg, rgba(0, 0, 0, 0.93) 11.2%, #3f3d3d 78.9%);
   padding: 5% 3%;
   display: flex;
   justify-content: center;
@@ -129,6 +100,7 @@ footer {
 }
 
 .footelement {
+  box-shadow: 0 0 20px #2d2d2d;
   padding: 2%;
   flex: 1 0 26%;
   background: #3b3c38;
