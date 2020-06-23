@@ -4,13 +4,9 @@ $color3: #FFE015
 $color4: #E8B600
 $color5: #FFAE0F
 
-$dark1: #696969
-$dark2: #595a5c
-$dark3: #3b3c38
+$dark1: #3b3c38
 
-$light1: #cfd9de
-$light2: $dark3
-$light3: #cdd5d5
+$light1: #696969
 
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;800&display=swap')
 
@@ -32,28 +28,6 @@ main
   display: grid
   grid-template-columns: 100%
 
-//.clean
-  text-align: center
-  padding: 50vh 0 50vh 0
-  background: transparent
-  font-size: 5vw
-  font-weight: 100
-  letter-spacing: 4vw
-  text-decoration: none
-  color: $light2
-  text-shadow: 0 0 40vw $light2
-
-
-
-//.mainmain
-  margin: auto
-  padding: auto
-  top: 0
-  left: 0
-  width: 100%
-  position: fixed
-  z-index: -1
-
 .maintitle
   margin: 0
   text-align: center
@@ -63,8 +37,20 @@ main
   font-weight: 100
   letter-spacing: 4vw
   text-decoration: none
-  color: $light2
-  text-shadow: 0 0 40vw $light2
+  color: $dark1
+  text-shadow: 0 0 40vw $dark1
+
+
+.about
+  background: $light1
+  padding: 5%
+  strong
+    font-size: 3em
+    color: $dark1
+  p
+    color: $dark1
+    line-height: 1.7em
+    font-size: 1.2em
 
 .titlepic
   width: 100%
@@ -74,8 +60,8 @@ main
   font-size: 3em
   font-weight: 800
   text-align: center
-  background: $dark1
-  color: $light2
+  background: $light1
+  color: $dark1
 
 .section
   display: grid
@@ -88,18 +74,28 @@ main
     grid-template-columns: 10% 1fr 10%
     grid-template-rows: repeat(3, auto)
     grid-template-areas: ". . ."". t ."". . ."
-    background: $light2
-    color: $dark1
+    background: $dark1
+    color: $light1
     p
       grid-area: t
       line-height: 1.7
+      font-size: 1em
 
 footer
-  background: $dark1
+  background: $light1
   padding: 5%
 
+//smaller than 1920px
+@media screen and (max-width: 1920px)
+  .about
+    p
+      font-size: 0.8em
+  .section
+    .text
+      p
+        font-size: 0.8em
 
-
+//smaller than 1143px
 @media screen and (max-width: 1143px)
   .section
     grid-template-columns: 100%

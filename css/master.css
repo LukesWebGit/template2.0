@@ -33,6 +33,20 @@ main {
   text-shadow: 0 0 40vw #3b3c38;
 }
 
+.about {
+  background: #696969;
+  padding: 5%;
+}
+.about strong {
+  font-size: 3em;
+  color: #3b3c38;
+}
+.about p {
+  color: #3b3c38;
+  line-height: 1.7em;
+  font-size: 1.2em;
+}
+
 .titlepic {
   width: 100%;
 }
@@ -65,6 +79,7 @@ main {
 .section .text p {
   grid-area: t;
   line-height: 1.7;
+  font-size: 1em;
 }
 
 footer {
@@ -72,6 +87,15 @@ footer {
   padding: 5%;
 }
 
+@media screen and (max-width: 1920px) {
+  .about p {
+    font-size: 0.8em;
+  }
+
+  .section .text p {
+    font-size: 0.8em;
+  }
+}
 @media screen and (max-width: 1143px) {
   .section {
     grid-template-columns: 100%;
