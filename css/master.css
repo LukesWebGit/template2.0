@@ -1,4 +1,33 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;800&display=swap");
+@font-face {
+  font-family: "Material Icons";
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://example.com/MaterialIcons-Regular.eot);
+  src: local("Material Icons");
+}
+.material-icons {
+  font-family: "Material Icons";
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;
+  display: inline-block;
+  line-height: 1;
+  text-transform: none;
+  letter-spacing: normal;
+  word-wrap: normal;
+  white-space: nowrap;
+  direction: ltr;
+  /* Support for all WebKit browsers. */
+  -webkit-font-smoothing: antialiased;
+  /* Support for Safari and Chrome. */
+  text-rendering: optimizeLegibility;
+  /* Support for Firefox. */
+  -moz-osx-font-smoothing: grayscale;
+  /* Support for IE. */
+  font-feature-settings: "liga";
+}
+
 body, html {
   height: 100%;
   width: 100%;
@@ -11,6 +40,10 @@ body {
   font-family: "Roboto", sans-serif;
   font-weight: 400;
   font-size: 1.5em;
+}
+
+::selection {
+  background: #a3a3a3;
 }
 
 main {
@@ -31,6 +64,10 @@ main {
   text-decoration: none;
   color: #3b3c38;
   text-shadow: 0 0 40vw #3b3c38;
+}
+
+.maintitle::selection {
+  background: transparent;
 }
 
 .about {
@@ -85,6 +122,16 @@ main {
 footer {
   background: #696969;
   padding: 5%;
+}
+
+.footelement {
+  margin: 5px;
+  background: #FFED12;
+}
+.footelement div {
+  background: #FFAE0F;
+  padding: 5px;
+  margin: 10px;
 }
 
 @media screen and (max-width: 1920px) {

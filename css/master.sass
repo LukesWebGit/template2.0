@@ -7,8 +7,41 @@ $color5: #FFAE0F
 $dark1: #3b3c38
 
 $light1: #696969
+$light2: rgb(163, 163, 163)
 
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;800&display=swap')
+
+@font-face
+  font-family: 'Material Icons'
+  font-style: normal
+  font-weight: 400
+  src: url(https://example.com/MaterialIcons-Regular.eot) /* For IE6-8 */
+  src: local('Material Icons'),
+
+.material-icons
+  font-family: 'Material Icons'
+  font-weight: normal
+  font-style: normal
+  font-size: 24px  /* Preferred icon size */
+  display: inline-block
+  line-height: 1
+  text-transform: none
+  letter-spacing: normal
+  word-wrap: normal
+  white-space: nowrap
+  direction: ltr
+
+  /* Support for all WebKit browsers. */
+  -webkit-font-smoothing: antialiased
+  /* Support for Safari and Chrome. */
+  text-rendering: optimizeLegibility
+
+  /* Support for Firefox. */
+  -moz-osx-font-smoothing: grayscale
+
+  /* Support for IE. */
+  font-feature-settings: 'liga'
+
 
 body, html
   height: 100%
@@ -21,6 +54,9 @@ body
   font-family: 'Roboto', sans-serif
   font-weight: 400
   font-size: 1.5em
+
+::selection
+  background: $light2
 
 main
   margin: 0
@@ -39,6 +75,9 @@ main
   text-decoration: none
   color: $dark1
   text-shadow: 0 0 40vw $dark1
+
+.maintitle::selection
+  background: transparent
 
 
 .about
@@ -84,6 +123,30 @@ main
 footer
   background: $light1
   padding: 5%
+
+.footelement
+  margin: 5px
+  background: $color1
+  div
+    background: $color5
+    padding: 5px
+    margin: 10px
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 //smaller than 1920px
 @media screen and (max-width: 1920px)
