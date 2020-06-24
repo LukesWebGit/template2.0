@@ -33,6 +33,31 @@ main
   display: grid
   grid-template-columns: 100%
 
+nav
+  position: fixed
+  top: 0
+  width: 100%
+  transition: top 300ms
+
+.navigation
+  display: flex
+  flex-flow: row wrap
+  justify-content: flex-end
+  list-style: none
+  margin: 0
+  padding: 0
+  background: $dark1
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1)
+  & a
+    text-decoration: none
+    display: block
+    padding: 1em
+    color: $light1
+    transition: 300ms all ease-in-out
+    &:hover
+      color: $light2
+
+
 .maintitle
   margin: 0
   text-align: center
@@ -52,10 +77,10 @@ main
 .about
   background: $light1
   padding: 5%
-  strong
+  & strong
     font-size: 3em
     color: $dark1
-  p
+  & p
     color: $dark1
     line-height: 1.7em
     font-size: 1.2em
@@ -75,7 +100,7 @@ main
   display: grid
   grid-template-columns: repeat(auto-fit, minmax(54.668rem,1fr))
   grid-template-rows: auto
-  img
+  & img
     width: 100%
   .text
     display: grid
@@ -84,7 +109,7 @@ main
     grid-template-areas: ". . ."". t ."". . ."
     background: $dark1
     color: $light1
-    p
+    & p
       grid-area: t
       line-height: 1.7
       font-size: 1em
@@ -99,7 +124,7 @@ footer
 
 
 .footelement
-  box-shadow: 0 0 20px rgb(45, 45, 45)
+  box-shadow: 0 0 20px #000
   padding: 2%
   flex: 1 0 26%
   background: $dark1
@@ -109,34 +134,35 @@ footer
   display: grid
   grid-gap: 20px
   //all cards general styling
-  div
+  & div
     display: flex
     justify-content: space-between
     align-items: center
   //Last Card Social Media sytlying
   .foottitle
-    p
+    & p
       font-size: 1.5em
       font-weight: 800
   .social
     display: flex
     justify-content: space-around
-    a
+    & a
       color: $light1
       transition: 300ms all ease-in-out
       &:hover
         color: $light2
   //First card small menu styling
   .footmenu
-    ul
+    & ul
       width: 100%
       margin: 0
       padding: 0
       list-style: none
       display: flex
       justify-content: space-between
-      li
-        a
+      & li
+        & a
+          display: block
           transition: 300ms all ease-in-out
           text-decoration: none
           color: $light1
@@ -144,8 +170,8 @@ footer
             color: $light2
   //mail link styling
   .mail
-    p
-      a
+    & p
+      & a
         transition: 300ms all ease-in-out
         text-decoration: none
         color: $light1
@@ -167,15 +193,15 @@ footer
 
 
 
-
 //smaller than 1920px
-@media screen and (max-width: 1920px)
+//@media screen and (max-width: 1920px)
+@media screen and (max-width: 2030px)
   .about
-    p
+    & p
       font-size: 0.8em
   .section
     .text
-      p
+      & p
         font-size: 0.8em
 
 //smaller than 1143px
@@ -188,11 +214,33 @@ footer
     font-weight: 400
   .footelement
     flex: 1 0 100%
-    div
+    & div
       padding: 0 7%
 
+@media screen and (max-width: 800px)
+  .footmenu
+    & ul
+      flex-flow: column wrap
+      & li
+        & a
+          padding: 10px
+          text-align: center
+          border-bottom: 1px solid rgba(0, 0, 0, 0.1)
+        &:last-of-type a
+          border-bottom: none
+  .navigation
+    flex-flow: column wrap
+    padding: 0
+    & a
+      text-align: center
+      padding: 10px
+      border-bottom: 1px solid rgba(0, 0, 0, 0.1)
+    li:last-of-type a
+    border-bottom: none
 
 @media (orientation:portrait)
+  .navigation
+    justify-content: space-around
   .section
     grid-template-columns: 100%
     .text

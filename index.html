@@ -13,6 +13,15 @@
 <body>
 
   <main>
+    <nav id="navbar">
+      <ul class="navigation">
+        <li><a href="#">Link1</a></li>
+        <li><a href="#">Link2</a></li>
+        <li><a href="#">Link3</a></li>
+        <li><a href="#">Link4</a></li>
+        <li><a href="#">Link5</a></li>
+      </ul>
+    </nav>
 
     <h1 class="maintitle">Flower Shop</h1>
 
@@ -144,5 +153,17 @@
     </footer>
   </main>
 </body>
+<script type="text/javascript">
+var prevScrollpos = window.pageYOffset;
+window.onscroll = function() {
+  var currentScrollPos = window.pageYOffset;
+  if (prevScrollpos > currentScrollPos) {
+    document.getElementById("navbar").style.top = "0";
+  } else {
+    document.getElementById("navbar").style.top = "-20%";
+  }
+  prevScrollpos = currentScrollPos;
+}
+</script>
 
 </html>
